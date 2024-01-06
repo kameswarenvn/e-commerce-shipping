@@ -1,0 +1,23 @@
+
+.productbody {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    gap: 1.5rem;
+  }
+  @media screen and (max-width: 1040px) {
+    .productbody {
+      grid-template-columns: 1fr 1fr;
+      gap: 0.5rem;
+    }
+  }
+  @media screen and (max-width: 578px) {
+    .productbody {
+      grid-template-columns: 1fr;
+    }
+  }
+  @media print {
+    .productbody {
+      display: none;
+    }
+  }
+  

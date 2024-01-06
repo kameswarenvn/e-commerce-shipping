@@ -1,0 +1,28 @@
+
+.footercontent{
+    background-color:#177e89 ;
+    padding: 50px;
+    margin-top: 22px;
+    footer{
+    
+        display: flex;
+    grid-template-columns: auto auto;
+  justify-content: space-between;
+        color: #fff;
+        img{
+            width: 35px;
+            margin-right: 10px;
+            padding: 10px 0;
+        }
+    }
+    .footers > *{
+      
+    }
+    p a , .footers p , .footerbottom p{
+        color: lightgray;
+        text-decoration: none;
+        margin: 6px 0!important;
+        font-size: 15px;
+        font-weight: 500;
+    }
+}

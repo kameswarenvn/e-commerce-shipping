@@ -1,0 +1,18 @@
+
+  
+  .searchinput{
+    width: 300px;
+    padding: 10px 27px;
+    border-color:#177e89;
+    border-radius: 0.5rem;
+    @media screen and (max-width: 400px){
+      width: 200px;
+ 
+    }
+  }
+  .searchinput:focus {
+    outline: #177e89;
+  }
+
+
+  

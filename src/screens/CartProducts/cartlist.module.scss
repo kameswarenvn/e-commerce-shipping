@@ -1,0 +1,67 @@
+.cardlistbody {
+    border: 2px solid var(--softer-color);
+    padding: 1rem;
+    margin-bottom: 2rem;
+    border-radius: 0.5rem;
+    position: relative;
+  }
+  .cardlistimg {
+    width: 3rem;
+  }
+  .cardListAddminubody {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .cardListAddminubody p {
+    margin: 0;
+  }
+  .plusItemsminu {
+    display: flex;
+  }
+  .plusbtn,
+  .minubtn,
+  .numofitems {
+    background-color: var(--color-white);
+    border: 1px solid var(--color-white);
+    background-color:  #177e89;
+    color: var(--color-white);
+    min-width: 30px;
+    min-height: 20px;
+    display: inline-block;
+    text-align: center;
+    padding: 0.3rem 0.5rem;
+    transition: 0.2s;
+  }
+  .plusbtn,
+  .minubtn {
+    cursor: pointer;
+  }
+  .plusbtn {
+    border-radius: 0.3rem 0 0 0.3rem;
+  }
+  .plusbtn:hover {
+    background-color: var(--color-waring);
+  }
+  .minubtn {
+    border-radius: 0 0.3rem 0.3rem 0;
+  }
+  .minubtn:hover {
+    background-color: var(--color-danger);
+  }
+  .deletebtn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background-color: var(--color-white);
+    border: 1px solid var(--color-danger);
+    color: var(--color-danger);
+    border-radius: 0.3rem;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  .deletebtn:hover {
+    color: var(--color-white);
+    background-color: var(--color-danger);
+  }
+  

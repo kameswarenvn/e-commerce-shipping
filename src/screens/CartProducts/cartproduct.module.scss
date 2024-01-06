@@ -1,0 +1,195 @@
+.addproductscontainer {
+    height: 100vh;
+    position: fixed;
+  
+    width: 100%;
+    top: 0;
+    right: 0;
+    display: flex;
+    z-index: 2;
+    animation: showhide 0.2s;
+  }
+  .animate {
+    animation: hideshow 0.2s;
+  }
+  .addproductscontainer .leftside {
+    height: 100vh;
+    width: 70%;
+    background-color: var(--softer-color);
+  }
+  .addproductscontainer .rightside {
+    height: 100vh;
+    width: 30%;
+    background-color: var(--color-white);
+    padding: 0 1rem;
+  }
+  .rightsideheader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    padding: 0 1rem;
+    h1{
+        font-size: 16px;
+    }
+  }
+  .rightsidebody {
+    padding: 2.5rem 1rem;
+    height: 65vh;
+    overflow: scroll;
+  }
+  .rightsidefooter {
+    height: 20vh;
+  }
+  .totalitems {
+    background-color: var(--color-primary);
+    padding: 0.5rem 1rem;
+    color: var(--color-white);
+    border-radius: 0.5rem;
+  }
+  .footerhead {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    h1{
+        font-size: 20px;
+    }
+  }
+  .bar {
+    height: 1px;
+    background-color: var(--softer-color);
+  }
+  .checkout {
+    text-align: center;
+    display: flex;
+    justify-content: flex-end;
+
+    .checkoutbtn {
+        font-size: 16px;
+        padding: 10px 20px;
+        background-color: #177e89;
+        border: 1px solid var(--color-white);
+        color: var(--color-white);
+        border-radius: 8px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: 0.2s;
+    
+      }
+      .checkoutbtn:hover {
+        background-color: var(--color-white);
+        border-color:  #177e89;
+        color:  #177e89;
+      }
+  }
+  
+  /*============= Check Out Print=============*/
+  .checkoutcontainer {
+    display: none;
+  }
+  .checkoutprint {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--color-white);
+    margin: auto;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .checkouttitle {
+    margin-bottom: 4rem;
+  }
+  table {
+    border: 1px solid;
+    border-collapse: collapse;
+  }
+  table tr,
+  th,
+  td {
+    border: 1px solid black;
+    padding: 0.3rem;
+  }
+  table td {
+    color: var(--soft-color);
+  }
+  table tr .tableitemtitle {
+    width: 20rem;
+  }
+  .total {
+    color: black;
+  }
+
+  
+  @media print {
+    .addproductscontainer .leftside {
+      width: 100%;
+    }
+    .checkoutcontainer {
+      display: block;
+    }
+    .addproductscontainer .rightside {
+      display: none;
+    }
+  }
+  
+
+  @keyframes showhide {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes hideshow {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+  @media screen and (max-width: 1040px) {
+    .addproductscontainer .leftside {
+      width: 50%;
+    }
+    .addproductscontainer .rightside {
+      width: 50%;
+    }
+  }
+  @media screen and (max-width: 400px) {
+    .addproductscontainer .leftside {
+      width: 0%;
+    }
+    .addproductscontainer .rightside {
+      width: 100%;
+    }
+  }
+  
+  .close {
+    position: absolute;
+    right: 32px;
+    top: 22px;
+    width: 32px;
+    height: 32px;
+    opacity: 0.3;
+  }
+  .close:hover {
+    opacity: 1;
+  }
+  .close:before, .close:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 30px;
+    width: 3px;
+    background-color: #333;
+  }
+  .close:before {
+    transform: rotate(45deg);
+  }
+  .close:after {
+    transform: rotate(-45deg);
+  }
